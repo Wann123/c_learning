@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main() {
+	printf("start!\n");
+
+	int number_1;
+	int number_2;
+
+	scanf_s("%d",&number_1 );
+	scanf_s("%d",&number_2 );
+
+	int sum = number_1 + number_2;
+  //int sum = number_1 - number_2;
+  //int sum = number_1 * number_2;
+  //int sum = number_1 / number_2;
+  //int sum = number_1 % number_2;    取余
+
+	printf("sum = %d\n",sum);
+
+
+	return 0;
+}
