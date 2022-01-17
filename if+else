@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main() {
+	printf("start!\n");
+
+	printf("请输入游戏分数\n");
+
+	int score;
+	scanf_s("%d", &score);
+	//printf("\n");
+
+	if (score <= 3000)
+	{
+		printf("defeat!");
+	}
+	else if (score <= 6000)
+	{
+		printf("victory!");
+	}
+	else if (score <= 9000)
+	{
+		printf("excellent victory!");
+	}
+	else
+	{
+		printf("extrordinary victory!");
+	}
+	
+	return 0;
+}
