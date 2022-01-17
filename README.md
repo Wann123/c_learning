@@ -1,2 +1,2 @@
-# c_learning
+# learning
 a notebook
