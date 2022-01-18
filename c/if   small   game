@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main() {
+	printf("start!\n");
+
+	printf("你买下了一座凶宅\n");
+	printf("是否居住？居住请输入1\n");
+
+	int score;
+	int end;
+	scanf_s("%d", &score);
+	//printf("\n");
+
+	if (score == 1)
+	{
+		printf("你躺在屋里睡觉，感觉身边有水的滴答声，你选择:\n");
+		printf("1.起来查看\n2.继续睡觉\n");
+
+		int choice1;
+		scanf_s("%d", &choice1);
+
+		if (choice1 == 2)
+		{
+			printf("safe night!\n");
+			printf("后续剧情编译中，敬请期待！");
+
+		}
+
+		else
+		{
+			printf("you find the goast , died!");
+		}
+	}
+	
+	else
+	{
+		printf("已经晚了，鬼盯上你了，游戏结束！");
+	}
+	
+	printf("按1退出游戏\n");
+	scanf_s("%d", &end);
+	
+	return 0;
+}
