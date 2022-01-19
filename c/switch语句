@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main() {
+	printf("start!\n");
+	int choice_1;//choices from players
+	int choice_2;
+	//......
+
+	//stories
+	printf("you are walking into a hotel. \n");
+	printf("The first night, you hear a party going on upstairs and it's so loud you can't sleep.\n");
+	printf("you are angry,you choose:\n");
+	printf("1.Talk to them and ask them to keep their voices down. \n");
+	printf("2.still hard sleeping\n");
+	scanf_s("%d", &choice_1);
+
+	switch (choice_1)
+	{
+	case 1: 
+	{
+		printf("There is no guests in this floor.\n");
+	}break;
+
+	case 2:
+	{
+		printf("you, game over.\n");
+	}break;
+
+	default:
+	{
+		printf("the number you enter is wrong, please open the game again.\n");
+	}break;
+
+	}
+
+	printf("万圣节快乐，按1退出游戏：\n");
+	scanf_s("%d", &choice_2);
+
+	return 0;
+}
