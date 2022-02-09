@@ -1,0 +1,21 @@
+#include<stdio.h>
+#define NUM 10
+int main() {
+	printf("start!\n");
+	int sc = 0;
+	while (sc <= NUM)
+	{
+		
+		
+		if (sc == 5)
+		{
+			printf("text1  \n");
+			sc++;//若无sc++，则将出现不断循环text1的状况，可以一试，是个死循环
+			continue;//若加上continue,将不打印sc = %d
+		}
+		printf("sc = %d  \n",sc);
+		sc++;
+	}
+
+	return 0;
+}
