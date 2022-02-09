@@ -10,8 +10,13 @@ int main() {
 		if (sc == 5)
 		{
 			printf("text1  \n");
-			sc++;//若无sc++，则将出现不断循环text1的状况，可以一试，是个死循环
+			sc++;
+			// 若无sc++，有continue时则将出现不断循环text1的状况，可以一试，是个死循环
+			// 无continue时，若无sc++,则打印sc=5
 			continue;//若加上continue,将不打印sc = %d
+			//老师这么说的，但是有sc++时候，妹有continue也不打印sc=5捏
+			//我的理解是这样的，continue的作用是，满足条件时跳出本轮循环，但是依然进行下轮循环。
+			//执行完if语句后，从头来过，sc=5的这一层不执行打印和自增
 		}
 		printf("sc = %d  \n",sc);
 		sc++;
