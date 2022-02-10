@@ -1,0 +1,20 @@
+#include<stdio.h>
+#define NUM 10
+int main() {
+	printf("start!\n");
+	int sc = 0;
+	while (sc <= NUM)
+	{
+		
+		if (sc == 5)
+		{
+			printf("text1  \n");
+			break;//跳出循环，后面不再执行
+		}
+
+		printf("sc = %d  \n",sc);
+		sc++;
+	}
+
+	return 0;
+}
